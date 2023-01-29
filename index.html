@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./public/chart-column-svgrepo-com.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Sort some stripes!</title>
+  </head>
+  <body>
+    <div class="toolbar">
+      <select>
+        <option value="BUBBLE">Bubble Sort</option>
+        <option value="SELECTION">Selection Sort</option>
+        <option value="QUICK">Quick Sort</option>
+        <option value="INSERTION">Insertion Sort</option>
+        <option value="MERGE">Merge Sort</option>
+        <option value="RADIX">Radix Sort</option>
+        <option value="COMB">Comb Sort</option>
+      </select>
+      <div class="number-of-elements">
+        <h1 id="numberText">Number of elements: 50</h1>
+        <input value="50" id="gauge" type="range" min="2" max="100" step="1" />
+      </div>
+      <div class="number-of-elements">
+        <h1 id="speedText">Step duration [ms]: 15</h1>
+        <input value="15" id="speed" type="range" min="5" max="200" step="5" />
+      </div>
+      <div class="number-of-elements">
+        <h1>Randomize stripes length</h1>
+        <input id="checkbox" type="checkbox" checked="true" />
+      </div>
+      <button id="check">Check if sorted</button>
+      <button id="sort">Sort!</button>
+    </div>
+    <div id="container"></div>
+    <div id="isSorted"></div>
+  </body>
+</html>
